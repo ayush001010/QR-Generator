@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #00346A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    text-align: center; /* Center the contents */
+    
+}
+
+.heading p {
+    color: #00346A;
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-weight: 550;
+}
+
+.text-box input {
+    width: calc(100% - 40px);
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    margin: 0 auto 20px auto;
+    border-radius: 6px;
+    border: 1px solid #024a97;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background-color: rgb(227, 227, 227);
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+}
+
+.qr-space img {
+    margin: 20px auto;
+    display: block;
+    width: auto;
+    height: auto;
+
+}
+
+button {
+    width: 50%;
+    height: 50px;
+    border: none;
+    outline: none;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background-color: #024a97;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #083b71;
+}
+
+.btn {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.shake {
+    animation: shake 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+    20%, 40%, 60%, 80% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+    .qr-space img {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+
+    .heading p {
+        font-size: 20px;
+    }
+
+    .text-box input {
+        width: calc(100% - 20px);
+    }
+
+    button {
+        width: 70%;
+        font-size: 16px;
+    }
+
+    .qr-space img {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .qr-space img {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 420px) {
+    .qr-space img {
+        max-width: 120px;
+    }
+}
